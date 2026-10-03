@@ -1,12 +1,12 @@
-import heroDesktop from "@/assets/wedding/hero-desktop.jpg.asset.json";
-import heroMobile from "@/assets/wedding/hero-mobile.jpg.asset.json";
-import storyPortrait from "@/assets/wedding/story.jpg.asset.json";
-import gallery1 from "@/assets/wedding/gallery-1.jpg.asset.json";
-import gallery2 from "@/assets/wedding/gallery-2.jpg.asset.json";
-import gallery3 from "@/assets/wedding/gallery-3.jpg.asset.json";
-import gallery4 from "@/assets/wedding/gallery-4.jpg.asset.json";
-import ceremonyPhoto from "@/assets/wedding/ceremony.jpg.asset.json";
-import receptionPhoto from "@/assets/wedding/reception.jpg.asset.json";
+import heroDesktop from "@/assets/wedding/hero-desktop.jpg";
+import heroMobile from "@/assets/wedding/hero-mobile.jpg";
+import storyPortrait from "@/assets/wedding/story.jpg";
+import gallery1 from "@/assets/wedding/gallery-1.jpg";
+import gallery2 from "@/assets/wedding/gallery-2.jpg";
+import gallery3 from "@/assets/wedding/gallery-3.jpg";
+import gallery4 from "@/assets/wedding/gallery-4.jpg";
+import ceremonyPhoto from "@/assets/wedding/ceremony.jpg";
+import receptionPhoto from "@/assets/wedding/reception.jpg";
 
 const giftBase = "https://cdn-assets-legacy.casar.com/thumb/208x208x1/dados/sitenoivos/wed1096305/presentes";
 const catalogGiftBase = "https://cdn-assets-legacy.casar.com/thumb/208x208x1/img/presentes";
@@ -15,7 +15,7 @@ export const wedding = {
   couple: { first: "Lucas", second: "Cherlane", initials: "L · C" },
   dateLabel: "19 | 12 | 2026",
   dateISO: "2026-12-19T17:00:00-03:00",
-  hero: { desktop: heroDesktop.url, mobile: heroMobile.url },
+  hero: { desktop: heroDesktop, mobile: heroMobile },
   navigation: [["Início", "home"], ["Nossa história", "nossa-historia"], ["Cerimônia", "cerimonia"], ["Recepção", "recepcao"], ["Lista de presentes", "presentes"], ["Confirme sua presença", "rsvp"], ["Recados", "recados"]],
   welcome: [
     '“Deus mudou o teu caminho até juntares com o meu e guardou a tua vida separando-a para mim. Para onde fores, irei; onde tu repousares, repousarei; teu Deus será o meu Deus. O teu caminho o meu será.” (Rt 1, 16-17)',
@@ -27,7 +27,7 @@ export const wedding = {
     "Fiquem à vontade! Aguardamos vocês no nosso grande dia!",
   ],
   story: {
-    title: "Nossa história 💙", portrait: storyPortrait.url,
+    title: "Nossa história 💙", portrait: storyPortrait,
     paragraphs: [
       "Algumas histórias começam de forma simples e, com o tempo, tornam-se especiais. A nossa foi construída com carinho, companheirismo, sonhos compartilhados e muitos momentos que nos trouxeram até aqui.",
       "Ao longo da nossa caminhada, aprendemos que amar também é escolher estar juntos todos os dias, celebrar as pequenas conquistas e seguir lado a lado diante dos desafios.",
@@ -35,14 +35,14 @@ export const wedding = {
       "Este dia representa o início de um novo capítulo da nossa história — e será ainda mais especial por podermos compartilhá-lo com vocês.",
       "Com carinho,\nLucas & Cherlane 💙",
     ],
-    gallery: [gallery1.url, gallery2.url, gallery3.url, gallery4.url],
+    gallery: [gallery1, gallery2, gallery3, gallery4],
   },
   ceremony: {
-    title: "Cerimônia", image: ceremonyPhoto.url,
+    title: "Cerimônia", image: ceremonyPhoto,
     paragraphs: ['“Assim, eles já não são dois, mas sim uma só carne.” (Mt 19, 6)', "Com o coração cheio de gratidão, queremos convidar vocês para testemunhar o momento em que, diante de Deus, entregaremos um ao outro o nosso “sim”.", "Mais do que celebrar o início de uma nova etapa, queremos receber o Sacramento do Matrimônio e assumir, com amor e fidelidade, a missão de caminhar juntos, construindo nossa família sob a graça e a bênção de Deus, da Sagrada Família e de nossos pais.", "Será uma alegria imensa ter vocês conosco neste momento tão sagrado e especial de nossas vidas.", "Contamos com a presença e as orações de vocês e faremos o possível para sermos pontuais."],
     when: "19 de dezembro de 2026, às 17h na Igreja São Benedito.", address: "Rua Madeira Brandão, 1271 – Bairro São Benedito, Parnaíba – PI, CEP 64202-160", map: "https://www.google.com/maps/search/?api=1&query=Igreja+São+Benedito+Parnaíba+PI",
   },
-  reception: { title: "Recepção", image: receptionPhoto.url, text: "O casal convida para recepção no dia 19 de Dezembro de 2026, no Espaço Old, Av. Coronel Lucas Correia, 77 - Bairro Nova Parnaíba, Parnaíba-PI, CEP 64218-760.", note: "A recepção será a partir de 18:30h. Não vai perder, né?", map: "https://www.google.com/maps/search/?api=1&query=Espaço+Old+Parnaíba+PI" },
+  reception: { title: "Recepção", image: receptionPhoto, text: "O casal convida para recepção no dia 19 de Dezembro de 2026, no Espaço Old, Av. Coronel Lucas Correia, 77 - Bairro Nova Parnaíba, Parnaíba-PI, CEP 64218-760.", note: "A recepção será a partir de 18:30h. Não vai perder, né?", map: "https://www.google.com/maps/search/?api=1&query=Espaço+Old+Parnaíba+PI" },
   gifts: [
     ["Item de teste — pagamento R$ 0,01", 0.01, "ppKf4_1789410146.jpg"],
     ["1 ano de corte de cabelo do noivo", 280, "BTS1P_1789407973.jpg"],
