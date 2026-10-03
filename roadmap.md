@@ -1,0 +1,19 @@
+# Roadmap
+- [x] Implementar a réplica completa e responsiva da página de referência
+- [x] Centralizar textos, imagens, links e presentes em um único arquivo
+- [x] Implementar checkout Pix e cartão com Mercado Pago Orders API
+- [x] Sincronizar os 50 presentes e valores exibidos na página de referência
+- [x] Confirmar visualmente os novos nomes e preços após clicar em “Ver mais presentes”
+- [x] Validar os 50 novos preços na lista completa e no checkout
+- [x] Corrigir a validação do domínio nacional retornado pelo Checkout Pro
+- [x] Tornar a assinatura do webhook compatível com o servidor publicado
+- [x] Permitir remover qualquer presente do carrinho e recalcular totais corretamente
+- [x] Adicionar e validar o item temporário de teste de R$ 0,01 sem alterar os 50 presentes
+- [x] Testar adicionar/remover inclusive o último item no checkout próprio
+- [ ] Migrar criação e consulta de pedidos para uma Supabase Edge Function com `Deno.env.get`
+- [ ] Migrar o webhook do Mercado Pago para a mesma Edge Function e configurar CORS para o domínio
+- [ ] Remover toda dependência dos Secrets e endpoints do servidor Lovable
+- [ ] Investigar a resposta real da Edge Function e do Mercado Pago para o item de R$ 0,01
+- [ ] Confirmar CORS, URL/nome da função, valor mínimo e mensagens de erro seguras
+- [ ] Obter uma URL real do Checkout Pro sem concluir pagamento
+- [ ] Validar o fluxo no domínio e publicar em cherlaneelucas.life
